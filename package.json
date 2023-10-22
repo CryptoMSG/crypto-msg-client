@@ -1,7 +1,7 @@
 {
   "name": "crypto-msg",
   "description": "CryptoMSG Client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Roman Sergeev",
   "homepage": "https://github.com/CryptoMSG/crypto-msg-client",
   "main": "app.js",
