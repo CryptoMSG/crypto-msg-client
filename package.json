@@ -1,19 +1,18 @@
 {
   "name": "crypto-msg",
-  "description": "CryptoMSG Client",
+  "description": "Client for decentralized communication system CryptoMSG",
   "version": "1.0.1",
+  "license": "MIT",
   "author": "Roman Sergeev",
   "homepage": "https://github.com/CryptoMSG/crypto-msg-client",
   "main": "app.js",
-  "preferGlobal": true,
+  "type": "module",
   "scripts": {
     "start": "node app.js"
   },
   "bin": {
     "crypto-msg": "app.js"
   },
-  "type": "module",
-  "license": "MIT",
   "dependencies": {
     "neo-blessed": "^0.2.0"
   }
