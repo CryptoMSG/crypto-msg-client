@@ -1,0 +1,15 @@
+{
+  "name": "crypto-msg",
+  "description": "CryptoMSG Client",
+  "version": "1.0.3",
+  "author": "Roman Sergeev",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "neo-blessed": "^0.2.0"
+  }
+}
