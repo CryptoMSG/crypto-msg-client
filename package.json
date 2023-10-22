@@ -3,6 +3,7 @@
   "description": "CryptoMSG Client",
   "version": "1.0.0",
   "author": "Roman Sergeev",
+  "homepage": "https://github.com/CryptoMSG/crypto-msg-client",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
