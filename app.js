@@ -7,44 +7,41 @@ const screen = blessed.screen({
 screen.title = 'CryptoMSG';
 
 const box = blessed.box({
-  top: 'center', left: 'center', width: '100%', height: '100%', border: {
-    type: 'line'
+  top: '0', left: 'center', width: '100%', height: '95%', border: {
+    type: 'line',
+    fg: 'yellow',
   }
 });
 
 const chatInput = blessed.input({
-  parent: box, bottom: '0', left: '0', width: '99%', height: '60', border: {
+  parent: screen, bottom: '0', left: 'center', width: '100%', height: '60', border: {
     type: 'line'
   }, inputOnFocus: true, style: {
-    fg: 'green', focus: {
-      border: {
-        fg: 'green'
-      }
+    border: {
+      fg: 'green'
     }
   },
 })
 
-screen.append(box);
+chatInput.on('keypress', key => {
+  chatInput.setValue('qwd')
+})
 
-box.on('click', function (data) {
+box.on('click', () => {
   box.setContent('qwerty');
   screen.render();
 });
 
-box.key('enter', function (ch, key) {
+box.key('enter', () => {
   box.setContent('zxczxc');
   box.setLine(1, 'bar');
   box.insertLine(1, 'foo');
   screen.render();
 });
 
-screen.on('keypress', (key) => {
-  console.log(key);
-});
-
-screen.key(['C-c'], function (ch, key) {
+screen.key(['C-c'], () => {
   return process.exit(0);
 });
 
-box.focus();
+screen.append(box);
 screen.render();
