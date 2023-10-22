@@ -5,8 +5,12 @@
   "author": "Roman Sergeev",
   "homepage": "https://github.com/CryptoMSG/crypto-msg-client",
   "main": "app.js",
+  "preferGlobal": true,
   "scripts": {
     "start": "node app.js"
+  },
+  "bin": {
+    "crypto-msg": "app.js"
   },
   "type": "module",
   "license": "MIT",

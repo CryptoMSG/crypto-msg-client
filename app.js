@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import blessed from 'neo-blessed'
 
 const screen = blessed.screen({
